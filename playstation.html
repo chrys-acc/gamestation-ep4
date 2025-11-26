@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary">
+      <div class="container">
+        <span class="navbar-brand" id="encabezad">GAMESTATION - PlayStation</span>
+        <label for="tema" id="label_tema">
+            <i class="fa-solid fa-moon" style="color: lightslategray;"></i>
+        </label>
+            <input type="checkbox" id="tema">
+      <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="xbox.html">Xbox</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="playstation.html"
+                  >PlayStation</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nintendo.html">Nintendo</a>
+              </li>
+            </ul>
+            </div>
+    </nav>
+
+    <div class="container mt-4">
+      <h1 class="text-center text-primary">CÁTALOGO JUEGOS PlayStation</h1>
+      <p class="text-center text-muted">¿TE INTERESA ALGUNO?</p>
+    </div>
+
+    <div class="catalogo-container">
+      <!--1.GOD OF WAR RAGNAROk-->
+      <div class="card game-card">
+        <img
+          src="https://w0.peakpx.com/wallpaper/428/686/HD-wallpaper-god-of-war-ragnarok-god-of-war-ragnarok-games-2022-games-ps5-games.jpg"
+          alt="Gow"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">GOD OF WAR RAGNAROk</h5>
+          <div class="game-info">
+            <p class="game-description">
+              Basado libremente en la mitología nórdica, el juego se desarrolla
+              en la antigua Escandinavia y presenta al protagonista de la serie
+              Kratos y su hijo adolescente Atreus. Concluyendo la era nórdica de
+              la serie, el juego cubre el Ragnarök, el evento escatológico que
+              es central en la mitología nórdica
+            </p>
+            <p><strong>GENERO:</strong> ACCION AVENTURA and SLASH</p>
+            <p><strong>PLATAFORMA: </strong> PlayStation</p>
+          </div>
+          <p class="game-price">$1000 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('GOD OF WAR RAGNAROk','1000')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--2.SILKSONG-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/s0btDQPaCKSlNtx2NiiO2S0g1HKQ2MWjstnX3RuFZas/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/cGNjb21wb25lbnRl/cy5jb20vcGNibG9n/LzE2NjA5L2Rlc2Nh/cmdhLTIwMjUtMDkt/MDJ0MTEyODEwLTYz/OC5qcGc"
+          alt="SilkSong"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">SILKSONG</h5>
+          <div class="game-info">
+            <p class="game-description">
+              De los creadores de Hollow Knight , esta obra maestra sigue la
+              historia de Hornet en su travesia por su casa por que la asaltaron.
+            </p>
+            <p><strong>GENERO:</strong> ACCION</p>
+            <p><strong>PLATAFORMA: </strong> PlayStation</p>
+          </div>
+          <p class="game-price">$350 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('SILKSONG','350')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--3.MINECRAFT-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/1AeX-phUu4_glZSnGTmKN2wZYzZnqNVfibfdWYNMHXc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/bWluZWNyYWZ0Lm5l/dC9jb250ZW50L2Rh/bS9taW5lY3JhZnRu/ZXQvZ2FtZXMvbWlu/ZWNyYWZ0L2tleS1h/cnQvRG93bmxvYWRz/X0JveC1BcnRfVmFu/aWxsYV82MDB4MzM3/QDJ4LmpwZw"
+          alt="Minecraft"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">MINECRAFT</h5>
+          <div class="game-info">
+            <p class="game-description">
+              Juego de mundo abierto de cubos dondé puedes poner a prueba tu
+              creatividad e imaginación
+            </p>
+            <p><strong>GENERO:</strong> AVENTURA</p>
+            <p><strong>PLATAFORMA: </strong> PlayStation</p>
+          </div>
+          <p class="game-price">$499 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('MINECRAFT','499')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--4.RED DEAD 2-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/rZBrOM43eUCEKDiJtPZr5Ftv1u0hsNJ4hNPryXCVkXs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXQuY29t/L3cvZnVsbC8zL2Ev/MC82NjEtMzg0MHgy/MTYwLWRlc2t0b3At/NGstcmVkLWRlYWQt/cmVkZW1wdGlvbi13/YWxscGFwZXItcGhv/dG8uanBn"
+          alt="RedDead"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">RED DEAD REDEMPTION 2</h5>
+          <div class="game-info">
+            <p class="game-description">
+              Juego de aventura de mundo abierto desarrollado y publicado por
+              Rockstar Games. El juego es la tercera entrada de la serie Red
+              Dead
+            </p>
+            <p><strong>GENERO:</strong> ACCION AVENTURA</p>
+            <p><strong>PLATAFORMA: </strong> PlayStation</p>
+          </div>
+          <p class="game-price">$799 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('RED DEAD REDEMPTION 2','750')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--5.BATTLEFIELD 6-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/sdE-oVUmnhZ6wmM2UZ07nX5IS624RNMPX28bpl0o8u4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zaGFy/ZWQuZmFzdGx5LnN0/ZWFtc3RhdGljLmNv/bS9zdG9yZV9pdGVt/X2Fzc2V0cy9zdGVh/bS9hcHBzLzI4MDc5/NjAvYzEyZDEyY2Uz/YzdkMjE3Mzk4ZDNm/Y2FkNzc0MjdiZmM5/ZDU3YzU3MC9oZWFk/ZXIuanBnP3Q9MTc2/MDEwODUzOA"
+          alt="Battlefield6"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">BATTLEFIELD 6</h5>
+          <div class="game-info">
+            <p class="game-description">
+              videojuego de disparos en primera persona de 2025 desarrollado por
+              Battlefield Studios y publicado por Electronic Arts.
+            </p>
+            <p><strong>GENERO:</strong> Disparos</p>
+            <p><strong>PLATAFORMA: </strong> PlayStation</p>
+          </div>
+          <p class="game-price">$1399 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('BATTLEFIELD 6','1399')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--6.CODBO7-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/OM7UoSmMg1-z1_nk6so4vfOBO8LejI66s-qVPd22LjA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjZy5jb20v/bWVkaWEvdHNfb3Jp/Zy8yODU2MC53ZWJw"
+          alt="Cod"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">CALL OF DUTY BLACK OPS 7</h5>
+          <div class="game-info">
+            <p class="game-description">
+              experiencia multijugador exclusiva repleta de mapas totalmente
+              nuevos, y desciende al siguiente y retorcido capítulo de Zombis
+              por rondas en el corazón del Éter Oscuro. 
+            </p>
+            <p><strong>GENERO:</strong> Disparos</p>
+            <p><strong>PLATAFORMA: </strong> PlayStation</p>
+          </div>
+          <p class="game-price">$1900 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('CALL OF DUTY BLACK OPS 7','1900')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--7.Phasmophobia-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/7amis0RLMWSVEnWuh4PcltkUtBw_dU9L0EtaB9_VXEw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMtcHJkLmlnbmlt/Z3MuY29tLzIwMjAv/MTAvMDkvcGhhc21v/cGhvYmlhLWJ1dHRv/bi0wMS0xNjAyMjc5/NDE2MTUzLmpwZz9j/cm9wPTE6MSxzbWFy/dCZmb3JtYXQ9anBn/JmF1dG89d2VicCZx/dWFsaXR5PTgw"
+          alt="phasmo"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Phasmophobia</h5>
+          <div class="game-info">
+            <p class="game-description">
+              Phasmophobia es un juego de horror psicológico cooperativo online
+              para 4 jugadores. Junto con tu equipo de investigadores
+              paranormales, entrarás en lugares encantados llenos de actividad
+              paranormal e intentarás reunir todas las pruebas que puedas.
+            </p>
+            <p><strong>GENERO:</strong> Terror Exploracion</p>
+            <p><strong>PLATAFORMA: </strong> PlayStation</p>
+          </div>
+          <p class="game-price">$349 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('Phasmophobia','349')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--8.HellDivers 2-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/embeHlQfWX4sMQNUqOHkRoLVMO57sLskDGQNo8ngix0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9nYW1p/bmctY2RuLmNvbS9p/bWFnZXMvcHJvZHVj/dHMvOTU3NS8zODB4/MjE4L2hlbGxkaXZl/cnMtMi1wYy1qZXUt/c3RlYW0tZXVyb3Bl/LXVzLWNhbmFkYS1j/b3Zlci5qcGc_dj0x/NzMyNTYzODI1"
+          alt="Helldivers2"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Helldivers 2</h5>
+          <div class="game-info">
+            <p class="game-description">
+              ¿Crees en la libertad? ¿Puedes enfrentar a la opresión y defender
+              a los indefensos? Libra una guerra por la paz. Muere por la
+              democracia. Une fuerzas con hasta tres amigos y siembra el caos en
+              las filas de la basura alienígena que amenaza la seguridad de tu
+              planeta natal
+            </p>
+            <p><strong>GENERO:</strong> Disparos Cooperativo</p>
+            <p><strong>PLATAFORMA: </strong> PlayStation</p>
+          </div>
+          <p class="game-price">$799 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('Helldivers 2','799')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--9.Borderlands4-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/DJVKBYnrRqTU7J9DcfxA8JZUtz1Rt0s-gRQFj-94vuY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4x/LmVwaWNnYW1lcy5j/b20vc3B0LWFzc2V0/cy8yMGQ5ODlmYzA3/YTQ0N2IyYWYzYzU5/ZTRmZDVmNDljNy9i/b3JkZXJsYW5kcy00/LTE0c2F6LmpwZz9y/ZXNpemU9MSZ3PTQ4/MCZoPTI3MCZxdWFs/aXR5PW1lZGl1bQ"
+          alt="Border"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Borderlans 4</h5>
+          <div class="game-info">
+            <p class="game-description">
+              En Borderlands 4, juegas como un buscacámaras: un mercenario
+              malvado a la caza de Cámaras alienígenas, empuñando armas salvajes
+              y habilidades devastadoras.
+            </p>
+            <p><strong>GENERO:</strong> Rol de acción Aventuras</p>
+            <p><strong>PLATAFORMA: </strong> PlayStation</p>
+          </div>
+          <p class="game-price">$1259 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('Borderlands 4','1259')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--10.Mortal1Kombat-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/kZhc0V8eI2O3EeQLjpekLPTAJC-4TxfVcCMrha4YY0I/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/bW9ydGFsLWtvbWJh/dC5vcmcvd3AtY29u/dGVudC91cGxvYWRz/LzIwMjMvMDUvTW9y/dGFsLUtvbWJhdC0x/LUtleS1BcnQuanBn"
+          alt="M1K"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Mortal1Kombat</h5>
+          <div class="game-info">
+            <p class="game-description">
+              Descubre el nuevo universo de Mortal Kombat, creado por el Dios
+              del Fuego Liu Kang. ¡Mortal Kombat™ 1 marca el comienzo de una
+              nueva era para la icónica franquicia, con un sistema de lucha,
+              modos de juego y Fatalities nuevos!
+            </p>
+            <p><strong>GENERO:</strong> Lucha</p>
+            <p><strong>PLATAFORMA: </strong> PlayStation</p>
+          </div>
+          <p class="game-price">$599 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('Mortal1Kombat','599')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--11.NBA 2k26-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/G-24_Ffkl8gpmSOwf85y1UZkJIBOszIcro_I4pgYw3M/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/YXBwbGUuY29tL25l/d3Nyb29tL2ltYWdl/cy8yMDI1LzA5L21h/a2UtaGlzdG9yeS1p/bi1ldmVyeS1lcmEt/aW4tbmJhLTJrMjYt/YXJjYWRlLWVkaXRp/b24tbGF1bmNoaW5n/LW9jdG9iZXItMTYv/YXJ0aWNsZS9BcHBs/ZS1BcmNhZGUtTkJB/LTJLMjYtQXJjYWRl/LUVkaXRpb24ta2V5/LWFydF9iaWcuanBn/LmxhcmdlLmpwZw"
+          alt="NBA2K26"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">NBA 2K26</h5>
+          <div class="game-info">
+            <p class="game-description">
+              NBA 2K26 es un simulador de baloncesto desarrollado por Visual
+              Concepts es la nueva entrega de la saga de simulación de
+              baloncesto de 2K Games, con Shai Gilgeous-Alexander como atleta de
+              portada en la edición estándar.
+            </p>
+            <p><strong>GENERO:</strong> Deportes</p>
+            <p><strong>PLATAFORMA: </strong> PlayStation</p>
+          </div>
+          <p class="game-price">$728 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('NBA2K26','728')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--12.Bying Light The Beast-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/GewV9wkF5AnrhKXUHjnDSyg6IIwa850m1vvHtqfvYLk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/d2hhdC1pcy15b3Vy/LW9waW5pb24tb24t/ZHlpbmctbGlnaHQt/dGhlLWJlYXN0LTIt/d2Vla3MtYWZ0ZXIt/djAtcTNxdjE2bDRv/a3NmMS5qcGVnP3dp/ZHRoPTY0MCZjcm9w/PXNtYXJ0JmF1dG89/d2VicCZzPTI0Nzli/MDJjNmZjZWJhYWQ1/M2ExYTEyNzg4YTlm/N2M3M2Y0NDhkYWE"
+          alt="DLTB"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Dying By Light The Beast</h5>
+          <div class="game-info">
+            <p class="game-description">
+              Dying Light: The Beast combina los géneros de acción y
+              supervivencia en el mundo abierto del valle de Castor Woods, un
+              lugar antaño precioso pero que ahora está hasta arriba de zombis
+            </p>
+            <p><strong>GENERO:</strong> Accion Aventura RPG</p>
+            <p><strong>PLATAFORMA: </strong> PlayStation</p>
+          </div>
+          <p class="game-price">$1059 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('Dying By Light The Beast','1059')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark-subtle text-center py-3 mt-5 text-emphasis>
+      <div class="container">
+        <p class="mb-0">2025 GAMESTATION RIGHTS</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+

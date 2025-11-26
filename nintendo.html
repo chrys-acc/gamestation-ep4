@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-danger">
+      <div class="container">
+        <span class="navbar-brand" id="encabezad">GAMESTATION - Nintendo</span>
+        <label for="tema" id="label_tema">
+            <i class="fa-solid fa-moon" style="color: lightslategray;"></i>
+        </label>
+            <input type="checkbox" id="tema">
+      <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="xbox.html">Xbox</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="playstation.html"
+                  >PlayStation</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="nintendo.html">Nintendo</a>
+              </li>
+            </ul>
+            </div>
+    </nav>
+
+    <div class="container mt-4">
+      <h1 class="text-center text-danger">CÁTALOGO JUEGOS Nintendo</h1>
+      <p class="text-center text-muted">¿TE INTERESA ALGUNO?</p>
+    </div>
+
+    <div class="catalogo-container">
+      <!--1.Pokemon Arceus-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/IBa8GZUxuJYDCuH0-7694SGbK3BwPUwfTira3_d3BKQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9lYXN5/Y2RuLmVzLzEvaW1h/Z2VuZXMvbGV5ZW5k/YXMtcG9rZW1vbi1h/cmNldXMtbmludGVu/ZG8tc3dpdGNoXzM0/Mzk4OV9wb3N0Lmpw/Zw"
+          alt="Halo"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Pokemon Leyendas Arceus</h5>
+          <div class="game-info">
+            <p class="game-description">
+              Juego de mundo abierto donde nos adentraremos al pasado del mundo
+              pokemon, con peligros a la vuelta de la esquina y mucho que
+              aprender.
+            </p>
+            <p><strong>GENERO:</strong>RPG</p>
+            <p><strong>PLATAFORMA: </strong> NINTENDO SW 1 Y 2</p>
+          </div>
+          <p class="game-price">$1200 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('Pokemon Arceus','1200')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--2.SILKSONG-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/s0btDQPaCKSlNtx2NiiO2S0g1HKQ2MWjstnX3RuFZas/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/cGNjb21wb25lbnRl/cy5jb20vcGNibG9n/LzE2NjA5L2Rlc2Nh/cmdhLTIwMjUtMDkt/MDJ0MTEyODEwLTYz/OC5qcGc"
+          alt="SilkSong"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">SILKSONG</h5>
+          <div class="game-info">
+            <p class="game-description">
+              De los creadores de Hollow Knight , esta obra maestra sigue la
+              historia de Hornet en su travesia por su casa por que la asaltaron.
+            </p>
+            <p><strong>GENERO:</strong> ACCION</p>
+            <p><strong>PLATAFORMA: </strong> NINTENDO SW 1 Y 2</p>
+          </div>
+          <p class="game-price">$350 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('SILKSONG','350')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--3.MINECRAFT-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/1AeX-phUu4_glZSnGTmKN2wZYzZnqNVfibfdWYNMHXc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/bWluZWNyYWZ0Lm5l/dC9jb250ZW50L2Rh/bS9taW5lY3JhZnRu/ZXQvZ2FtZXMvbWlu/ZWNyYWZ0L2tleS1h/cnQvRG93bmxvYWRz/X0JveC1BcnRfVmFu/aWxsYV82MDB4MzM3/QDJ4LmpwZw"
+          alt="Minecraft"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">MINECRAFT</h5>
+          <div class="game-info">
+            <p class="game-description">
+              Juego de mundo abierto de cubos dondé puedes poner a prueba tu
+              creatividad e imaginación
+            </p>
+            <p><strong>GENERO:</strong> AVENTURA</p>
+            <p><strong>PLATAFORMA: </strong> NINTENDO SW 1 Y 2</p>
+          </div>
+          <p class="game-price">$499 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('MINECRAFT','499')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--4.Pokemon Leyendas Z Arceus-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/r3otlMcu4bpD75NtGkVHOyCAELzcfEKOC5G_H1crN0g/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMubmludGVuZG8u/ZXUvaW1hZ2UvcHJp/dmF0ZS9mX2F1dG8s/Y19saW1pdCx3XzQ4/OCxxX2F1dG86ZWNv/OnNlbnNpdGl2ZS96/djdqMHVxY3kzc2dt/cXVqenNyZA"
+          alt="RedDead"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Pokemon Leyendas Z A</h5>
+          <div class="game-info">
+            <p class="game-description">
+              Juego de aventura de mundo abierto ubicado en la ciudad Luminalia
+              despues de años de los sucesos de pokemon X e Y, donde el sistema
+              de combates cambia totalmente.
+            </p>
+            <p><strong>GENERO:</strong> RPG</p>
+            <p><strong>PLATAFORMA: </strong> NINTENDO SW 1 Y 2</p>
+          </div>
+          <p class="game-price">$799 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('RED DEAD REDEMPTION 2','750')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--5.The Legend of Zelda Tears Of the Kingdom-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/Up0Dfec-fvfSH_vDDVnrLLTVL406OHf2QMbqlXo-tw4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL1Mv/YXBsdXMtbWVkaWEt/bGlicmFyeS1zZXJ2/aWNlLW1lZGlhL2Mz/Mjg2OGNjLWZmN2Qt/NDE2MC04ZTQwLWQz/YTkwMjI2OTYxNi5f/X0NSMCwwLDE0NjQs/NjAwX1BUMF9TWDE0/NjRfVjFfX18uanBn"
+          alt="Battlefield6"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">The Legend Of Zelda : Tears Of the Kingdom</h5>
+          <div class="game-info">
+            <p class="game-description">
+              Una épica aventura a través de la superficie y los cielos de
+              Hyrule te espera en el juego The Legend of Zelda: Tears of the
+              Kingdom para la consola Nintendo Switch. Esta aventura será tuya
+              para experimentar en un mundo alimentado por tu imaginación.
+            </p>
+            <p><strong>GENERO:</strong> aventura accion mundo abierto</p>
+            <p><strong>PLATAFORMA: </strong> NINTENDO SW 1 Y 2</p>
+          </div>
+          <p class="game-price">$1299 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('TLOZTOTK','1299')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--6.The Legend Of Zelda : Breath of the Wild-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/h0_FkCyRMnLxNsn4XBAfeKuukcIVQ5B0f0jDiH5VHxU/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMubnV1dmVtLmNv/bS9pbWFnZS91cGxv/YWQvdF9iYW5uZXJf/YmlnL3YxL3Byb2R1/Y3RzLzVlNDlkNzcw/ZDU5N2VjMGY5NmUx/MzBiZC9iYW5uZXJz/L290bGF0YmVlZHJt/Ym9xbmp1aWZ5Lmpw/Zw"
+          alt="Cod"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">The Legend Of Zelda : Breath of the Wild</h5>
+          <div class="game-info">
+            <p class="game-description">
+              Entra en un mundo de descubrimientos, exploración y aventura en
+              The Legend of Zelda: Breath of the Wild, un nuevo juego de la
+              aclamada serie que rompe con las convenciones. Viaja por prados,
+              bosques y cumbres montañosas para descubrir qué ha sido del
+              asolado reino de Hyrule
+            </p>
+            <p><strong>GENERO:</strong> Disparos</p>
+            <p><strong>PLATAFORMA: </strong> NINTENDO SW 1 Y 2</p>
+          </div>
+          <p class="game-price">$1200 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('TLOZBOTW','1200')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--7.The Legend of Zelda: Link's Awakening-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/-jCs4hbrsANUEc5BSjmHRIeIkmEwOKLvJgjqVCLrTm4/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS52YW5kYWwubmV0/L2kvMzAweDE2MC85/LTIwMTkvMjAxOTkx/ODE2NTQ1NzM4XzEu/anBn"
+          alt="phasmo"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">The Legend of Zelda: Link's Awakening</h5>
+          <div class="game-info">
+            <p class="game-description">
+              En su aventura para despertar al Pez del Viento, Link deberá
+              viajar hasta distintas mazmorras dispersas por toda la isla.
+              Recorre cada sala de estos laberintos mientras resuelves puzles
+              complejos, sorteas trampas y te enfrentas a los terribles
+              monstruos que allí te aguardan.
+            </p>
+            <p><strong>GENERO:</strong> Aventura</p>
+            <p><strong>PLATAFORMA: </strong> NINTENDO SW 1 Y 2</p>
+          </div>
+          <p class="game-price">$1500 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('The Legend of Zelda: Links Awakening','1500')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--8.bAYONETTA 3-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/0glcDs261xYmPSW4NDiWV1OgFAz2YDQ7gLeMumgLCdk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vdGh1bWIv/Zi9mZS9CYXlvbmV0/dGFfM19jb3Zlci53/ZWJwLzI1MHB4LUJh/eW9uZXR0YV8zX2Nv/dmVyLndlYnAucG5n"
+          alt="Helldivers2"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">BAYONETTA 3</h5>
+          <div class="game-info">
+            <p class="game-description">
+              ¿Crees en la libertad? ¿Puedes enfrentar a la opresión y defender
+              a los indefensos? Libra una guerra por la paz. Muere por la
+              democracia. Une fuerzas con hasta tres amigos y siembra el caos en
+              las filas de la basura alienígena que amenaza la seguridad de tu
+              planeta natal
+            </p>
+            <p><strong>GENERO:</strong> AVENTURA</p>
+            <p><strong>PLATAFORMA: </strong> NINTENDO SW 1 Y 2</p>
+          </div>
+          <p class="game-price">$799 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('Helldivers 2','799')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--9.Metroid Prime 4 Beyond-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/wC08yHeMM15kpwObcDCX_EI9qQQT62E7sjE-D8NUcIk/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS52YW5kYWxpbWcu/Y29tL2kvMjQweDEz/NS80OS80OTE2NC9t/ZXRyb2lkLXByaW1l/LTQtYmV5b25kLTIw/MjUzMjcxNjMyODZf/MS5qcGc"
+          alt="Border"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Metroid Prime 4 Beyond</h5>
+          <div class="game-info">
+            <p class="game-description">
+              Metroid Prime 4: Beyond: Tras un repentino accidente, Samus es
+              transportada al misterioso planeta Viewros. Los jugadores
+              escanearán lo que les rodea en busca de pistas.
+            </p>
+            <p><strong>GENERO:</strong> Accion Primera Persona</p>
+            <p><strong>PLATAFORMA: </strong> XBOX</p>
+          </div>
+          <p class="game-price">$1259 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('SAMUSBEYOND','1259')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--10.Mortal1Kombat-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/kZhc0V8eI2O3EeQLjpekLPTAJC-4TxfVcCMrha4YY0I/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/bW9ydGFsLWtvbWJh/dC5vcmcvd3AtY29u/dGVudC91cGxvYWRz/LzIwMjMvMDUvTW9y/dGFsLUtvbWJhdC0x/LUtleS1BcnQuanBn"
+          alt="M1K"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Mortal1Kombat</h5>
+          <div class="game-info">
+            <p class="game-description">
+              Descubre el nuevo universo de Mortal Kombat, creado por el Dios
+              del Fuego Liu Kang. ¡Mortal Kombat™ 1 marca el comienzo de una
+              nueva era para la icónica franquicia, con un sistema de lucha,
+              modos de juego y Fatalities nuevos!
+            </p>
+            <p><strong>GENERO:</strong> Lucha</p>
+            <p><strong>PLATAFORMA: </strong> NINTENDO SW 1 Y 2</p>
+          </div>
+          <p class="game-price">$599 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('Mortal1Kombat','599')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--11.DONKEY KONG BANANZA-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/mfwOes6C0nn3mhlQJsXJGfR0MrcRfBX4W8Ev7mB2Z1k/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/ZG9ua2V5LWtvbmct/YmFuYW56YS1pLXRo/aW5rLXVuc2Vlbi1o/aWdoZXN0LXF1YWxp/dHktaW1hZ2VzLXYw/LXBhZzZnbG0zOGN1/ZTEuanBnP3dpZHRo/PTY0MCZjcm9wPXNt/YXJ0JmF1dG89d2Vi/cCZzPTY1YTUzNmFh/YmI1MjhkZDJiODEw/YmViN2YyYjdjYzYx/Mzg0MjEwYjU"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">DONKEY KONG BANANZA</h5>
+          <div class="game-info">
+            <p class="game-description">
+              Explora la isla DK y emprende una cacería de esmeraldas en este
+              contenido descargable para Burro Kong Bananza! Regreso al paraíso
+              tropical que Burro Kong llama a casa. Explora libremente la isla,
+              reúnete con caras conocidas e intercambia tus chips de banandio
+              por estatuas
+            </p>
+            <p><strong>GENERO:</strong> Aventura</p>
+            <p><strong>PLATAFORMA: </strong> NINTENDO SW 2</p>
+          </div>
+          <p class="game-price">$1749 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('DKBANANZA','1749')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+      <!--12.Mario Kart World-->
+      <div class="card game-card">
+        <img
+          src="https://imgs.search.brave.com/6qgWtivPDoJvNrDVuJXOo9wDFm39ErXtrBfzvsaC4Eg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS52YW5kYWwubmV0/L2kvNjQweDM2MC82/LTIwMjUvMjAyNTYx/MDE1NDYyODUwXzEu/anBn"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Mario Kart World</h5>
+          <div class="game-info">
+            <p class="game-description">
+              Mario Kart World es un videojuego de carreras de karts
+              desarrollado y publicado por Nintendo para la Nintendo Switch 2.
+              Al igual que en anteriores juegos Mario Kart, los jugadores
+              controlan a los personajes de Mario mientras compiten contra
+              oponentes.
+            </p>
+            <p><strong>GENERO:</strong> MUNDO ABIERTO CARRERAS</p>
+            <p><strong>PLATAFORMA: </strong> NINTENDO SW 2</p>
+          </div>
+          <p class="game-price">$1399 mxn</p>
+          <button
+            class="btn btn-comprar w-100"
+            onclick="comprarJuego('MARIOKARTWORLD','1399')"
+          >
+            <i class="fas fa-shopping-cart"></i>COMPRAR
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark-subtle text-center py-3 mt-5 text-emphasis">
+      <div class="container">
+        <p class="mb-0">2025 GAMESTATION RIGHTS</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
