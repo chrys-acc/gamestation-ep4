@@ -1,0 +1,178 @@
+/*Boton de cambio de modos*/
+#tema{
+    display: none;
+}
+
+#label_tema{
+    position: absolute;
+    right: 10px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.label_moon{
+    background-color: white;
+    color: lightslategray
+}
+
+.label_sun{
+    background-color: white;
+    color: white;
+}
+
+/*Style venta*/
+/*Contenido principal */
+    #main_ventas{
+        padding: 20px;
+        display: flex;/*Centra el contenido  */
+        justify-content: center;/*Centra horizontal mente */
+        align-items: center;/*Centra verticalmente */
+        padding: 40px 0;/*Espacio de superior e inferior */
+    }
+    #h5_venta{
+        color:  black;/*Coolor de los titulos*/
+    }
+    #form{
+        background-color: white;/*Color del fondo del formulario*/
+        padding: 10px;/*Espacio */
+        display: flex;/*Alinear elementos */
+        flex-direction: column;/*Elementos de la columna */
+        border-radius: 5px; /*Bordes redondeados */
+        width: 100%;/*Ancho del formulario */
+        max-width: 600px;/*Ancho maximo */
+    }
+
+    form input, form textarea, form select{
+        width: 100%;/*Ancho del formulario */
+        padding: 10px;/*Espacio */
+        margin-bottom: 15px;/*Separacion */
+        border-radius: 4px;/*Bordes */
+        font-size: 16px;/*Texto tamaño */
+    }
+    .form-label{
+        color: black;/*Color del label */
+        margin-bottom: 5px;/*Separacion inferior del label */
+    }
+    #btn_venta{
+        padding: 10px 25px;/*Tama del boton */
+        border: #333;/*Color borde */
+        border-radius: 5px;/*Bordes redondeados */
+    }
+    #btn_venta:hover{
+        color: gray;/*Color al pasar el mouse */
+    }
+    /*Contenedor de botones */
+    .botones {
+        display: flex;/*Botones en fila  */
+        justify-content: center;/*Centra los botones */
+        gap: 10px; /*Espacio entre botones */
+    }
+
+footer{
+  bottom: 0;
+  width: 100%;
+}
+
+/*Modo claro*/
+body {
+  background-color: aliceblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.catalogo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.game-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+  overflow: hidden;
+}
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #15259a;
+}
+.card-body {
+  padding: 20px;
+}
+.card-title {
+  color: #8e0b0b;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+.game-info {
+  margin-bottom: 15px;
+}
+.game-description {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.game-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #370a98;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.btn-comprar {
+  background: linear-gradient(135deg, #c00a0a, #08118f);
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-comprar:hover {
+  background: linear-gradient(135deg, #cb1b1b, #061c6a);
+  transform: scale(1.05);
+  color: white;
+}
+.card-body {
+  text-align: center;
+}
+.card-title {
+  color: #2f12a2;
+  font-size: 1.4rem;
+}
+.game-info {
+  color: #6c757d;
+  margin-bottom: 25px;
+}
+
+/*Modo oscuro*/
+.dark{
+  background-color: black;
+  color: white;
+  transition: all 1s ease;
+}
+
+.card_body_dark {
+  transition: all 1s ease;
+  background: lightslategray;
+}
+
+.game_info_dark{
+  transition: all 1s ease;
+  color: white;
+}
+
+.game_description_dark {
+  transition: all 1s ease;
+  color: white;
+}
